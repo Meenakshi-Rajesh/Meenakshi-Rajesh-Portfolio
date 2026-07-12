@@ -725,3 +725,296 @@ button:hover {
     }
 
 }
+
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+
+.about-page {
+
+    min-height:calc(100vh - 90px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 80px;
+
+}
+
+
+
+
+/* About heading */
+
+.about-header {
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.about-header h1 {
+
+    font-size:50px;
+
+    letter-spacing:6px;
+
+    font-weight:600;
+
+}
+
+
+
+.about-header .divider {
+
+    margin:25px auto;
+
+}
+
+
+
+
+
+/* Main about container */
+
+
+.about-content {
+
+
+    width:100%;
+
+
+    max-width:1100px;
+
+
+    display:flex;
+
+
+    gap:50px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+/* Introduction */
+
+
+.about-intro {
+
+
+    flex:1;
+
+
+}
+
+
+
+.about-intro h2 {
+
+
+    color:#D4AF37;
+
+
+    letter-spacing:3px;
+
+
+    font-size:28px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.about-intro p {
+
+
+    color:#CBD5E1;
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+/* Cards area */
+
+
+.about-details {
+
+
+    flex:1;
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+.about-card {
+
+
+    background:
+
+
+    rgba(255,255,255,0.05);
+
+
+
+    border:
+
+
+    1px solid rgba(212,175,55,.25);
+
+
+
+    border-radius:18px;
+
+
+
+    padding:25px;
+
+
+
+    backdrop-filter:blur(15px);
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+.about-card i {
+
+
+    font-size:28px;
+
+
+    color:#2563EB;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+.about-card h3 {
+
+
+    color:white;
+
+
+    margin-bottom:10px;
+
+
+    letter-spacing:1px;
+
+
+}
+
+
+
+
+
+.about-card p {
+
+
+    color:#94A3B8;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+.about-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#D4AF37;
+
+
+
+    box-shadow:
+
+
+    0 0 25px rgba(212,175,55,.25);
+
+
+}
+
+
+
+
+
+/* =========================================
+   ACTIVE TOP NAV
+========================================= */
+
+
+.top-nav a.active::after {
+
+
+    width:100%;
+
+
+}
