@@ -4,19 +4,15 @@
 ========================================= */
 
 
-/* ---------- RESET ---------- */
-
+/* RESET */
 
 * {
 
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
 
 }
-
 
 
 html {
@@ -29,16 +25,19 @@ html {
 
 body {
 
+
     min-height:100vh;
 
 
     background:
 
+
     radial-gradient(
-        circle at 50% 20%,
-        rgba(30,64,175,0.25),
-        transparent 35%
+        circle at 50% 15%,
+        rgba(37,99,235,0.25),
+        transparent 40%
     ),
+
 
     #020617;
 
@@ -52,7 +51,9 @@ body {
     Arial,
     sans-serif;
 
+
 }
+
 
 
 
@@ -78,35 +79,80 @@ body {
     height:100vh;
 
 
-
     background:
 
-    rgba(15,23,42,0.75);
+
+    linear-gradient(
+
+        180deg,
+
+        rgba(15,23,42,.95),
+
+        rgba(2,6,23,.95)
+
+    );
 
 
 
-    backdrop-filter:
-
-    blur(20px);
-
+    backdrop-filter:blur(20px);
 
 
     border-right:
 
     1px solid
 
-    rgba(212,175,55,0.25);
+    rgba(212,175,55,.25);
 
 
 
     padding:35px 20px;
 
 
+    overflow:hidden;
+
+
 }
 
 
 
-/* Logo */
+.sidebar::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    right:0;
+
+
+    top:170px;
+
+
+    width:3px;
+
+
+    height:160px;
+
+
+
+    background:#2563EB;
+
+
+
+    box-shadow:
+
+
+    0 0 15px #2563EB,
+
+    0 0 40px #2563EB;
+
+
+}
+
+
+
 
 
 .logo {
@@ -132,7 +178,8 @@ body {
 
 
 
-/* Menu */
+
+/* MENU */
 
 
 .side-menu {
@@ -144,10 +191,11 @@ body {
     flex-direction:column;
 
 
-    gap:20px;
+    gap:18px;
 
 
 }
+
 
 
 
@@ -160,11 +208,15 @@ body {
     align-items:center;
 
 
-    gap:18px;
+    gap:15px;
 
 
 
-    padding:14px 12px;
+    padding:13px 10px;
+
+
+
+    border-radius:8px;
 
 
 
@@ -179,14 +231,11 @@ body {
 
 
 
-    border-radius:10px;
-
-
-
     transition:.3s;
 
 
 }
+
 
 
 
@@ -211,10 +260,11 @@ body {
     color:#D4AF37;
 
 
-    transform:translateX(6px);
+    transform:translateX(5px);
 
 
 }
+
 
 
 
@@ -225,15 +275,28 @@ body {
     color:#D4AF37;
 
 
+
     background:
 
-    rgba(255,255,255,0.08);
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.12),
+
+        transparent
+
+    );
 
 
 
     box-shadow:
 
-    inset -3px 0 0 #D4AF37;
+
+    inset -3px 0 0 #D4AF37,
+
+    0 0 20px rgba(212,175,55,.25);
 
 
 }
@@ -252,7 +315,7 @@ body {
 
 
 
-/* Social */
+/* SOCIAL ICONS */
 
 
 .social {
@@ -261,7 +324,7 @@ body {
     position:absolute;
 
 
-    bottom:35px;
+    bottom:40px;
 
 
     left:20px;
@@ -271,10 +334,11 @@ body {
     display:flex;
 
 
-    gap:22px;
+    gap:18px;
 
 
 }
+
 
 
 
@@ -284,13 +348,14 @@ body {
     color:#D4AF37;
 
 
-    font-size:20px;
+    font-size:19px;
 
 
     transition:.3s;
 
 
 }
+
 
 
 
@@ -307,8 +372,11 @@ body {
 
 
 
+
+
+
 /* =========================================
-   MAIN
+MAIN AREA
 ========================================= */
 
 
@@ -322,9 +390,11 @@ body {
 
 
 
-/* =========================================
-   TOP NAV
-========================================= */
+
+
+
+
+/* TOP NAVIGATION */
 
 
 .top-nav {
@@ -355,6 +425,7 @@ body {
 
 
 
+
 .top-nav a {
 
 
@@ -371,6 +442,7 @@ body {
 
 
 }
+
 
 
 
@@ -396,7 +468,9 @@ body {
     height:2px;
 
 
+
     background:#D4AF37;
+
 
 
     transition:.3s;
@@ -418,8 +492,9 @@ body {
 
 
 
+
 /* =========================================
-   HERO
+HERO SECTION
 ========================================= */
 
 
@@ -444,13 +519,57 @@ body {
     align-items:center;
 
 
+
+    position:relative;
+
+
 }
 
 
 
 
 
-/* Profile */
+.hero::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:500px;
+
+
+    height:500px;
+
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle,
+
+        rgba(37,99,235,.18),
+
+        transparent 70%
+
+    );
+
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+
+/* PROFILE */
 
 
 .profile-circle {
@@ -462,37 +581,57 @@ body {
     height:300px;
 
 
-
     border-radius:50%;
 
+
+    padding:4px;
 
 
     overflow:hidden;
 
 
 
-    border:
+    background:
 
-    3px solid #D4AF37;
+
+    conic-gradient(
+
+        #D4AF37,
+
+        #2563EB,
+
+        #D4AF37,
+
+        transparent,
+
+        #2563EB,
+
+        #D4AF37
+
+    );
+
+
+
+    animation:
+
+
+    rotateBorder 6s linear infinite,
+
+    float 4s ease-in-out infinite;
 
 
 
     box-shadow:
 
 
-    0 0 20px #D4AF37,
+    0 0 25px #D4AF37,
 
-
-    0 0 70px rgba(37,99,235,.7);
-
-
-
-    animation:
-
-    float 4s ease-in-out infinite;
+    0 0 70px rgba(37,99,235,.8);
 
 
 }
+
+
 
 
 
@@ -511,11 +650,18 @@ body {
     object-position:center 25%;
 
 
+    border-radius:50%;
+
+
 }
 
 
 
-/* Name */
+
+
+
+
+/* TEXT */
 
 
 .hero h1 {
@@ -538,7 +684,6 @@ body {
 
 
 
-
 .hero h2 {
 
 
@@ -552,7 +697,6 @@ body {
 
 
 }
-
 
 
 
@@ -584,7 +728,10 @@ body {
 
 
 
-/* Divider */
+
+
+
+/* DIVIDER */
 
 
 .divider {
@@ -606,7 +753,9 @@ body {
 
 
 
-/* Buttons */
+
+
+/* BUTTONS */
 
 
 .buttons {
@@ -625,13 +774,11 @@ body {
 
 
 
+
 button {
 
 
-    padding:
-
-    14px 35px;
-
+    padding:14px 35px;
 
 
     border-radius:15px;
@@ -667,6 +814,8 @@ button {
 
 
 
+
+
 button i {
 
 
@@ -674,6 +823,8 @@ button i {
 
 
 }
+
+
 
 
 
@@ -694,7 +845,10 @@ button:hover {
 
 
 
-/* Animation */
+
+
+
+/* ANIMATIONS */
 
 
 @keyframes float {
@@ -717,6 +871,31 @@ button:hover {
     100% {
 
         transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+@keyframes rotateBorder {
+
+
+    from {
+
+
+        transform:rotate(0deg);
+
+
+    }
+
+
+    to {
+
+
+        transform:rotate(360deg);
+
 
     }
 
