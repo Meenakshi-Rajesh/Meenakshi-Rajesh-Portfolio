@@ -737,6 +737,8 @@ button:hover {
 
     min-height:calc(100vh - 90px);
 
+    padding:50px 80px;
+
     display:flex;
 
     flex-direction:column;
@@ -745,20 +747,16 @@ button:hover {
 
     align-items:center;
 
-    padding:40px 80px;
-
 }
 
 
 
 
-/* About heading */
-
 .about-header {
 
     text-align:center;
 
-    margin-bottom:50px;
+    margin-bottom:55px;
 
 }
 
@@ -766,11 +764,15 @@ button:hover {
 
 .about-header h1 {
 
-    font-size:50px;
+
+    font-size:52px;
 
     letter-spacing:6px;
 
     font-weight:600;
+
+    color:white;
+
 
 }
 
@@ -778,7 +780,9 @@ button:hover {
 
 .about-header .divider {
 
+
     margin:25px auto;
+
 
 }
 
@@ -786,7 +790,6 @@ button:hover {
 
 
 
-/* Main about container */
 
 
 .about-content {
@@ -795,13 +798,16 @@ button:hover {
     width:100%;
 
 
-    max-width:1100px;
+    max-width:1150px;
 
 
-    display:flex;
+    display:grid;
 
 
-    gap:50px;
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
 
 
     align-items:center;
@@ -814,20 +820,13 @@ button:hover {
 
 
 
-/* Introduction */
-
-
-.about-intro {
-
-
-    flex:1;
-
-
-}
-
+/* LEFT CONTENT */
 
 
 .about-intro h2 {
+
+
+    font-size:30px;
 
 
     color:#D4AF37;
@@ -836,13 +835,11 @@ button:hover {
     letter-spacing:3px;
 
 
-    font-size:28px;
-
-
     margin-bottom:25px;
 
 
 }
+
 
 
 
@@ -868,22 +865,20 @@ button:hover {
 
 
 
-/* Cards area */
+
+/* RIGHT CARDS */
 
 
 .about-details {
 
 
-    flex:1;
+    display:flex;
 
 
-    display:grid;
+    flex-direction:column;
 
 
-    grid-template-columns:1fr;
-
-
-    gap:20px;
+    gap:22px;
 
 
 }
@@ -896,34 +891,28 @@ button:hover {
 .about-card {
 
 
-    background:
-
-
-    rgba(255,255,255,0.05);
-
-
-
-    border:
-
-
-    1px solid rgba(212,175,55,.25);
-
+    padding:25px;
 
 
     border-radius:18px;
 
 
-
-    padding:25px;
-
+    background:
 
 
-    backdrop-filter:blur(15px);
+    rgba(255,255,255,0.06);
 
+
+    border:
+
+
+    1px solid rgba(212,175,55,.3);
+
+
+    backdrop-filter:blur(20px);
 
 
     transition:.3s;
-
 
 
 }
@@ -932,13 +921,14 @@ button:hover {
 
 
 
+
 .about-card i {
 
 
-    font-size:28px;
-
-
     color:#2563EB;
+
+
+    font-size:30px;
 
 
     margin-bottom:15px;
@@ -956,10 +946,10 @@ button:hover {
     color:white;
 
 
+    font-size:22px;
+
+
     margin-bottom:10px;
-
-
-    letter-spacing:1px;
 
 
 }
@@ -993,11 +983,10 @@ button:hover {
     border-color:#D4AF37;
 
 
-
     box-shadow:
 
 
-    0 0 25px rgba(212,175,55,.25);
+    0 0 30px rgba(212,175,55,.25);
 
 
 }
@@ -1006,15 +995,45 @@ button:hover {
 
 
 
-/* =========================================
-   ACTIVE TOP NAV
-========================================= */
+
+/* TOP NAV ACTIVE */
 
 
 .top-nav a.active::after {
 
 
     width:100%;
+
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+    .about-content {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+    .about-page {
+
+
+        padding:40px 25px;
+
+
+    }
 
 
 }
