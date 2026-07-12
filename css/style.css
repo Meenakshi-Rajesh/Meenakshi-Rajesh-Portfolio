@@ -743,8 +743,8 @@ button:hover {
 
     flex-direction:column;
 
-    justify-content:center;
-
+    justify-content:flex-start;
+    padding-top:40px;
     align-items:center;
    transform:translateY(-20px);
 
