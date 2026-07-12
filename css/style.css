@@ -57,8 +57,9 @@ body {
 
 
 
+
 /* =========================================
-   SIDEBAR
+SIDEBAR
 ========================================= */
 
 
@@ -171,6 +172,37 @@ body {
 
 
     margin-bottom:70px;
+
+
+}
+
+
+
+.logo::after {
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:60px;
+
+
+    height:2px;
+
+
+    background:#D4AF37;
+
+
+    margin:15px auto 0;
+
+
+    box-shadow:
+
+
+    0 0 15px #D4AF37;
 
 
 }
@@ -315,7 +347,9 @@ body {
 
 
 
-/* SOCIAL ICONS */
+
+
+/* SOCIAL */
 
 
 .social {
@@ -375,6 +409,8 @@ body {
 
 
 
+
+
 /* =========================================
 MAIN AREA
 ========================================= */
@@ -394,7 +430,7 @@ MAIN AREA
 
 
 
-/* TOP NAVIGATION */
+/* TOP NAV */
 
 
 .top-nav {
@@ -493,8 +529,10 @@ MAIN AREA
 
 
 
+
+
 /* =========================================
-HERO SECTION
+HERO
 ========================================= */
 
 
@@ -521,6 +559,9 @@ HERO SECTION
 
 
     position:relative;
+
+
+    transform:translateY(-30px);
 
 
 }
@@ -568,6 +609,53 @@ HERO SECTION
 
 
 
+.hero::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    bottom:40px;
+
+
+    left:80px;
+
+
+    width:350px;
+
+
+    height:100px;
+
+
+
+    background:
+
+
+    radial-gradient(
+
+        ellipse,
+
+        rgba(37,99,235,.35),
+
+        transparent 70%
+
+    );
+
+
+
+    filter:blur(20px);
+
+
+}
+
+
+
+
+
+
 
 /* PROFILE */
 
@@ -575,10 +663,10 @@ HERO SECTION
 .profile-circle {
 
 
-    width:300px;
+    width:320px;
 
 
-    height:300px;
+    height:320px;
 
 
     border-radius:50%;
@@ -626,6 +714,7 @@ HERO SECTION
 
     0 0 25px #D4AF37,
 
+
     0 0 70px rgba(37,99,235,.8);
 
 
@@ -661,6 +750,7 @@ HERO SECTION
 
 
 
+
 /* TEXT */
 
 
@@ -680,6 +770,7 @@ HERO SECTION
 
 
 }
+
 
 
 
@@ -731,6 +822,8 @@ HERO SECTION
 
 
 
+
+
 /* DIVIDER */
 
 
@@ -755,6 +848,9 @@ HERO SECTION
 
 
 
+
+
+
 /* BUTTONS */
 
 
@@ -771,6 +867,7 @@ HERO SECTION
 
 
 }
+
 
 
 
@@ -842,6 +939,8 @@ button:hover {
 
 
 }
+
+
 
 
 
