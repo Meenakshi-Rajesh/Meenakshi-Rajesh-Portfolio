@@ -388,7 +388,7 @@ body {
     position:relative;
 
 
-    transform:translateY(-15px);
+    transform:translateY(-35px);
 
 }
 
@@ -521,10 +521,10 @@ body {
     margin-top:35px;
 
 
-    font-size:52px;
+    font-size:48px;
 
 
-    letter-spacing:7px;
+    letter-spacing:6px;
 
 
     font-weight:600;
