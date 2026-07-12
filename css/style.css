@@ -46,6 +46,7 @@ body {
 
 
 
+
 /* =========================================
    SIDEBAR
 ========================================= */
@@ -125,6 +126,7 @@ body {
     0 0 15px #D4AF37;
 
 }
+
 
 
 
@@ -216,11 +218,13 @@ body {
 
 
 
+
 .side-menu a.active i {
 
     color:#D4AF37;
 
 }
+
 
 
 
@@ -282,8 +286,9 @@ body {
 
 
 
-
-/* TOP NAV */
+/* =========================================
+   TOP NAV
+========================================= */
 
 
 .top-nav {
@@ -355,13 +360,13 @@ body {
 
 
 
-
 /* =========================================
    HERO
 ========================================= */
 
 
 .hero {
+
 
     min-height:
 
@@ -383,15 +388,15 @@ body {
     position:relative;
 
 
-    transform:translateY(-25px);
+    transform:translateY(-15px);
 
 }
 
 
 
 
-
 .hero::before {
+
 
     content:"";
 
@@ -409,9 +414,13 @@ body {
     background:
 
     radial-gradient(
+
         circle,
+
         rgba(37,99,235,.18),
+
         transparent 70%
+
     );
 
 
@@ -425,48 +434,42 @@ body {
 
 
 
-/* PROFILE IMAGE */
+/* =========================================
+   PROFILE IMAGE
+========================================= */
 
 
 .profile-circle {
 
+
     width:320px;
+
 
     height:320px;
 
+
     border-radius:50%;
 
-    padding:4px;
 
-    overflow:hidden;
+    padding:5px;
+
 
     background:#D4AF37;
 
 
+    overflow:hidden;
+
+
+
     box-shadow:
 
+
     0 0 20px #D4AF37,
+
 
     0 0 60px rgba(37,99,235,.7);
 
 
-    animation:
-
-    float 4s ease-in-out infinite;
-
-}
-
-
-
-    box-shadow:
-
-
-    0 0 15px #D4AF37,
-
-
-    0 0 45px rgba(37,99,235,.55);
-
-
 
     animation:
 
@@ -474,7 +477,6 @@ body {
 
 
 }
-
 
 
 
@@ -488,10 +490,13 @@ body {
     height:100%;
 
 
+    display:block;
+
+
     object-fit:cover;
 
 
-    object-position:center 25%;
+    object-position:center center;
 
 
     border-radius:50%;
@@ -505,7 +510,9 @@ body {
 
 
 
-/* TEXT */
+/* =========================================
+   TEXT
+========================================= */
 
 
 .hero h1 {
@@ -514,7 +521,7 @@ body {
     margin-top:35px;
 
 
-    font-size:48px;
+    font-size:52px;
 
 
     letter-spacing:7px;
@@ -524,6 +531,7 @@ body {
 
 
 }
+
 
 
 
@@ -544,7 +552,9 @@ body {
 
 
 
+
 .hero h2 span {
+
 
     color:#2563EB;
 
@@ -592,8 +602,9 @@ body {
 
 
 
-
-/* BUTTONS */
+/* =========================================
+   BUTTONS
+========================================= */
 
 
 .buttons {
@@ -612,6 +623,7 @@ body {
 
 
 
+
 button {
 
 
@@ -626,16 +638,21 @@ button {
     1px solid #D4AF37;
 
 
+
     background:transparent;
+
 
 
     color:white;
 
 
+
     font-size:15px;
 
 
+
     cursor:pointer;
+
 
 
     transition:.3s;
@@ -645,12 +662,15 @@ button {
 
 
 
+
 button i {
 
 
     margin-right:8px;
 
+
 }
+
 
 
 
@@ -664,6 +684,7 @@ button:hover {
 
     box-shadow:
 
+
     0 0 25px rgba(212,175,55,.6);
 
 
@@ -674,7 +695,10 @@ button:hover {
 
 
 
-/* ANIMATION */
+
+/* =========================================
+   ANIMATION
+========================================= */
 
 
 @keyframes float {
