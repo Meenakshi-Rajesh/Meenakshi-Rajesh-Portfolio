@@ -800,7 +800,7 @@ button:hover {
 
 
     max-width:1100px;
-    gap:70px;
+    
 
     display:grid;
 
@@ -808,7 +808,7 @@ button:hover {
     grid-template-columns:1fr 1fr;
 
 
-    gap:60px;
+    gap:45px;
 
 
     align-items:center;
