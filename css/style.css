@@ -1,28 +1,31 @@
-/* =========================
-   Aurora Portfolio Theme
-========================= */
+/* =========================================
+   MEENAKSHI RAJESH PORTFOLIO
+   Aurora Dark Theme
+========================================= */
 
+
+/* ---------- Global ---------- */
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
 
-    min-height:100vh;
+    min-height: 100vh;
 
     background:
-    radial-gradient(circle at top,
-    rgba(59,130,246,0.18),
-    transparent 35%),
-
+    radial-gradient(
+        circle at top,
+        rgba(59,130,246,0.18),
+        transparent 35%
+    ),
     #030712;
 
-
-    color:white;
+    color: white;
 
     font-family:
     "Inter",
@@ -32,47 +35,57 @@ body {
 }
 
 
-/* Sidebar */
+/* ---------- Sidebar ---------- */
 
 
 .sidebar {
 
-    position:fixed;
+    position: fixed;
 
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
 
-    width:260px;
-    height:100vh;
+    width: 260px;
+
+    height: 100vh;
 
 
     background:
     rgba(255,255,255,0.04);
 
 
-    backdrop-filter:blur(20px);
+    backdrop-filter: blur(20px);
 
 
     border-right:
     1px solid
-    rgba(212,175,55,0.2);
+    rgba(212,175,55,0.25);
 
 
-    padding:40px 25px;
+    padding: 40px 25px;
 
 }
 
+
+
+/* Logo */
 
 
 .logo {
 
-    font-size:42px;
+    font-size: 42px;
 
-    color:#D4AF37;
+    color: #D4AF37;
 
-    margin-bottom:60px;
+    margin-bottom: 60px;
+
+    letter-spacing: 2px;
 
 }
+
+
+
+/* Sidebar menu */
 
 
 .sidebar nav {
@@ -94,7 +107,19 @@ body {
 
     font-size:18px;
 
+    transition:.3s;
+
 }
+
+
+.sidebar a:hover {
+
+    color:#D4AF37;
+
+    transform:translateX(8px);
+
+}
+
 
 
 .sidebar a.active {
@@ -105,7 +130,33 @@ body {
 
 
 
-/* Main */
+/* Social */
+
+
+.social {
+
+    position:absolute;
+
+    bottom:40px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.social span {
+
+    color:#D4AF37;
+
+    font-size:18px;
+
+}
+
+
+
+/* ---------- Main Area ---------- */
 
 
 .main {
@@ -116,7 +167,7 @@ body {
 
 
 
-/* Top navigation */
+/* ---------- Top Navigation ---------- */
 
 
 .top-nav {
@@ -136,22 +187,36 @@ body {
 }
 
 
+
 .top-nav a {
 
     color:white;
 
     font-size:18px;
 
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
 
 
-/* Hero */
+.top-nav a:hover {
+
+    color:#D4AF37;
+
+}
+
+
+/* ---------- Hero Section ---------- */
 
 
 .hero {
 
-    min-height:calc(100vh - 90px);
+    min-height:
+    calc(100vh - 90px);
+
 
     display:flex;
 
@@ -164,76 +229,147 @@ body {
 }
 
 
-.profile-circle img {
 
-    width:340px !important;
-    height:340px !important;
+/* ---------- Profile Image ---------- */
 
-    max-width:none;
 
-    object-fit:cover;
+.profile-circle {
+
+
+    width:340px;
+
+    height:340px;
+
 
     border-radius:50%;
 
+
+    overflow:hidden;
+
+
+    border:
+    3px solid #D4AF37;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+
+    box-shadow:
+
+    0 0 20px #D4AF37,
+
+    0 0 60px rgba(59,130,246,.7);
+
+
+
+    animation:
+    float 4s ease-in-out infinite;
+
+
 }
+
 
 
 .profile-image {
 
+
     width:100%;
+
     height:100%;
 
-   object-position:center 25%;
 
     object-fit:cover;
 
-    border-radius:50%;
+
+    object-position:center 25%;
+
+
+    display:block;
+
 
 }
 
+
+
+/* ---------- Name ---------- */
 
 
 .hero h1 {
 
+
     margin-top:35px;
 
-    font-size:55px;
 
-    letter-spacing:8px;
+    font-size:52px;
+
+
+    letter-spacing:6px;
+
+
+    font-weight:600;
+
 
 }
+
+
+
+/* ---------- Role ---------- */
 
 
 .hero h2 {
 
+
     margin-top:25px;
+
 
     color:#D4AF37;
 
+
     letter-spacing:5px;
 
+
 }
+
+
+
+/* ---------- Education ---------- */
 
 
 .hero p {
 
+
     margin-top:30px;
+
 
     color:#CBD5E1;
 
+
     font-size:20px;
+
 
 }
 
 
 
+/* ---------- Buttons ---------- */
+
+
 .buttons {
+
 
     margin-top:40px;
 
+
     display:flex;
 
+
     gap:30px;
+
 
 }
 
@@ -242,7 +378,9 @@ body {
 button {
 
 
-    padding:15px 40px;
+    padding:
+
+    15px 40px;
 
 
     border-radius:15px;
@@ -252,6 +390,7 @@ button {
 
 
     border:
+
     1px solid #D4AF37;
 
 
@@ -260,20 +399,56 @@ button {
 
     font-size:16px;
 
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
 }
+
+
+
+button:hover {
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.6);
+
+
+}
+
+
+
+/* ---------- Animation ---------- */
+
 
 @keyframes float {
 
+
     0% {
+
         transform:translateY(0);
+
     }
+
 
     50% {
+
         transform:translateY(-12px);
+
     }
 
+
     100% {
+
         transform:translateY(0);
+
     }
 
 }
