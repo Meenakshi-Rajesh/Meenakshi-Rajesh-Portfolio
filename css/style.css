@@ -954,11 +954,11 @@ rgba(15,23,42,0.85)
     color:white;
 
 
-    font-size:22px;
+    font-size:20px;
 
 
-    margin-bottom:10px;
-
+    margin-bottom:12px;
+    letter-spacing:.5px;
 
 }
 
