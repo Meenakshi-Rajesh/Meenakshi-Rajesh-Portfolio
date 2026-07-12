@@ -746,7 +746,7 @@ button:hover {
     justify-content:flex-start;
     padding-top:40px;
     align-items:center;
-   transform:translateY(-20px);
+   transform:translateY(-15px);
 
 }
 
@@ -799,8 +799,8 @@ button:hover {
     width:100%;
 
 
-    max-width:1200px;
-
+    max-width:1100px;
+    gap:70px;
 
     display:grid;
 
@@ -931,7 +931,8 @@ rgba(15,23,42,0.85)
 
 
     color:#2563EB;
-
+    text-shadow:
+    0 0 15px rgba(37,99,235,.8);
 
     font-size:30px;
 
@@ -966,8 +967,7 @@ rgba(15,23,42,0.85)
 .about-card p {
 
 
-    color:#94A3B8;
-
+    color:#CBD5E1;
 
     line-height:1.6;
 
