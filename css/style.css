@@ -7,37 +7,29 @@
 /* RESET */
 
 * {
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 
 html {
-
     scroll-behavior:smooth;
-
 }
 
 
 
 body {
 
-
     min-height:100vh;
 
-
     background:
-
 
     radial-gradient(
         circle at 50% 15%,
         rgba(37,99,235,0.25),
         transparent 40%
     ),
-
 
     #020617;
 
@@ -46,28 +38,22 @@ body {
 
 
     font-family:
-
     "Inter",
     Arial,
     sans-serif;
-
 
 }
 
 
 
-
-
 /* =========================================
-SIDEBAR
+   SIDEBAR
 ========================================= */
 
 
 .sidebar {
 
-
     position:fixed;
-
 
     left:0;
 
@@ -82,17 +68,11 @@ SIDEBAR
 
     background:
 
-
     linear-gradient(
-
         180deg,
-
         rgba(15,23,42,.95),
-
         rgba(2,6,23,.95)
-
     );
-
 
 
     backdrop-filter:blur(20px);
@@ -105,74 +85,23 @@ SIDEBAR
     rgba(212,175,55,.25);
 
 
-
     padding:35px 20px;
 
-
-    overflow:hidden;
-
-
 }
-
-
-
-.sidebar::after {
-
-
-    content:"";
-
-
-    position:absolute;
-
-
-    right:0;
-
-
-    top:170px;
-
-
-    width:3px;
-
-
-    height:160px;
-
-
-
-    background:#2563EB;
-
-
-
-    box-shadow:
-
-
-    0 0 15px #2563EB,
-
-    0 0 40px #2563EB;
-
-
-}
-
-
 
 
 
 .logo {
 
-
     text-align:center;
-
 
     font-size:38px;
 
-
     letter-spacing:3px;
-
 
     color:#D4AF37;
 
-
     margin-bottom:70px;
-
 
 }
 
@@ -180,80 +109,54 @@ SIDEBAR
 
 .logo::after {
 
-
     content:"";
-
 
     display:block;
 
-
-    width:60px;
-
+    width:55px;
 
     height:2px;
 
-
     background:#D4AF37;
 
-
-    margin:15px auto 0;
-
+    margin:12px auto;
 
     box-shadow:
-
-
     0 0 15px #D4AF37;
-
 
 }
 
 
-
-
-
-/* MENU */
 
 
 .side-menu {
 
-
     display:flex;
-
 
     flex-direction:column;
 
-
     gap:18px;
 
-
 }
-
 
 
 
 .side-menu a {
 
-
     display:flex;
-
 
     align-items:center;
 
-
     gap:15px;
-
 
 
     padding:13px 10px;
 
 
-
     border-radius:8px;
 
 
-
     color:#94A3B8;
-
 
 
     text-decoration:none;
@@ -262,42 +165,29 @@ SIDEBAR
     font-size:15px;
 
 
-
     transition:.3s;
 
-
 }
-
-
 
 
 
 .side-menu i {
 
-
     width:18px;
-
 
     color:#2563EB;
 
-
 }
-
 
 
 
 .side-menu a:hover {
 
-
     color:#D4AF37;
-
 
     transform:translateX(5px);
 
-
 }
-
-
 
 
 
@@ -307,29 +197,20 @@ SIDEBAR
     color:#D4AF37;
 
 
-
     background:
 
-
     linear-gradient(
-
         90deg,
-
         rgba(255,255,255,.12),
-
         transparent
-
     );
-
 
 
     box-shadow:
 
-
     inset -3px 0 0 #D4AF37,
 
     0 0 20px rgba(212,175,55,.25);
-
 
 }
 
@@ -337,94 +218,66 @@ SIDEBAR
 
 .side-menu a.active i {
 
-
     color:#D4AF37;
 
-
 }
-
-
-
 
 
 
 
 /* SOCIAL */
 
-
 .social {
-
 
     position:absolute;
 
-
     bottom:40px;
-
 
     left:20px;
 
 
-
     display:flex;
-
 
     gap:18px;
 
-
 }
-
 
 
 
 .social a {
 
-
     color:#D4AF37;
-
 
     font-size:19px;
 
-
     transition:.3s;
 
-
 }
-
 
 
 
 .social a:hover {
 
-
     color:#2563EB;
-
 
     transform:translateY(-5px);
 
-
 }
-
-
-
 
 
 
 
 
 /* =========================================
-MAIN AREA
+   MAIN
 ========================================= */
 
 
 .main {
 
-
     margin-left:200px;
 
-
 }
-
-
 
 
 
@@ -435,9 +288,7 @@ MAIN AREA
 
 .top-nav {
 
-
     height:90px;
-
 
 
     display:flex;
@@ -449,68 +300,46 @@ MAIN AREA
     align-items:center;
 
 
-
     gap:55px;
-
 
 
     padding-right:70px;
 
-
 }
-
 
 
 
 .top-nav a {
 
-
     color:white;
-
 
     text-decoration:none;
 
-
     font-size:17px;
 
-
     position:relative;
-
 
 }
 
 
 
-
-
 .top-nav a::after {
-
 
     content:"";
 
-
     position:absolute;
-
 
     left:0;
 
-
     bottom:-10px;
-
 
     width:0;
 
-
     height:2px;
-
-
 
     background:#D4AF37;
 
-
-
     transition:.3s;
-
 
 }
 
@@ -518,9 +347,7 @@ MAIN AREA
 
 .top-nav a:hover::after {
 
-
     width:100%;
-
 
 }
 
@@ -529,20 +356,16 @@ MAIN AREA
 
 
 
-
-
 /* =========================================
-HERO
+   HERO
 ========================================= */
 
 
 .hero {
 
-
     min-height:
 
     calc(100vh - 90px);
-
 
 
     display:flex;
@@ -557,12 +380,10 @@ HERO
     align-items:center;
 
 
-
     position:relative;
 
 
-    transform:translateY(-30px);
-
+    transform:translateY(-10px);
 
 }
 
@@ -571,7 +392,6 @@ HERO
 
 
 .hero::before {
-
 
     content:"";
 
@@ -588,67 +408,15 @@ HERO
 
     background:
 
-
     radial-gradient(
-
         circle,
-
         rgba(37,99,235,.18),
-
         transparent 70%
-
     );
-
 
 
     z-index:-1;
 
-
-}
-
-
-
-
-.hero::after {
-
-
-    content:"";
-
-
-    position:absolute;
-
-
-    bottom:40px;
-
-
-    left:80px;
-
-
-    width:350px;
-
-
-    height:100px;
-
-
-
-    background:
-
-
-    radial-gradient(
-
-        ellipse,
-
-        rgba(37,99,235,.35),
-
-        transparent 70%
-
-    );
-
-
-
-    filter:blur(20px);
-
-
 }
 
 
@@ -657,16 +425,16 @@ HERO
 
 
 
-/* PROFILE */
+/* PROFILE IMAGE */
 
 
 .profile-circle {
 
 
-    width:320px;
+    width:340px;
 
 
-    height:320px;
+    height:340px;
 
 
     border-radius:50%;
@@ -681,41 +449,28 @@ HERO
 
     background:
 
-
-    conic-gradient(
-
+    linear-gradient(
+        135deg,
         #D4AF37,
-
         #2563EB,
-
-        #D4AF37,
-
-        transparent,
-
-        #2563EB,
-
         #D4AF37
-
     );
-
-
-
-    animation:
-
-
-    rotateBorder 6s linear infinite,
-
-    float 4s ease-in-out infinite;
 
 
 
     box-shadow:
 
 
-    0 0 25px #D4AF37,
+    0 0 15px #D4AF37,
 
 
-    0 0 70px rgba(37,99,235,.8);
+    0 0 45px rgba(37,99,235,.55);
+
+
+
+    animation:
+
+    float 4s ease-in-out infinite;
 
 
 }
@@ -750,7 +505,6 @@ HERO
 
 
 
-
 /* TEXT */
 
 
@@ -760,7 +514,7 @@ HERO
     margin-top:35px;
 
 
-    font-size:52px;
+    font-size:48px;
 
 
     letter-spacing:7px;
@@ -770,7 +524,6 @@ HERO
 
 
 }
-
 
 
 
@@ -793,12 +546,9 @@ HERO
 
 .hero h2 span {
 
-
     color:#2563EB;
 
-
 }
-
 
 
 
@@ -821,12 +571,6 @@ HERO
 
 
 
-
-
-
-/* DIVIDER */
-
-
 .divider {
 
 
@@ -843,8 +587,6 @@ HERO
 
 
 }
-
-
 
 
 
@@ -870,8 +612,6 @@ HERO
 
 
 
-
-
 button {
 
 
@@ -881,27 +621,21 @@ button {
     border-radius:15px;
 
 
-
     border:
 
     1px solid #D4AF37;
 
 
-
     background:transparent;
-
 
 
     color:white;
 
 
-
     font-size:15px;
 
 
-
     cursor:pointer;
-
 
 
     transition:.3s;
@@ -911,16 +645,12 @@ button {
 
 
 
-
-
 button i {
 
 
     margin-right:8px;
 
-
 }
-
 
 
 
@@ -934,7 +664,6 @@ button:hover {
 
     box-shadow:
 
-
     0 0 25px rgba(212,175,55,.6);
 
 
@@ -945,9 +674,7 @@ button:hover {
 
 
 
-
-
-/* ANIMATIONS */
+/* ANIMATION */
 
 
 @keyframes float {
@@ -972,31 +699,5 @@ button:hover {
         transform:translateY(0);
 
     }
-
-}
-
-
-
-
-@keyframes rotateBorder {
-
-
-    from {
-
-
-        transform:rotate(0deg);
-
-
-    }
-
-
-    to {
-
-
-        transform:rotate(360deg);
-
-
-    }
-
 
 }
