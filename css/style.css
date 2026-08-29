@@ -1422,143 +1422,155 @@ z-index:-1;
 }
 
 /* =========================================
-   SKILLS PAGE - FINAL STYLING
+   SKILLS PAGE
 ========================================= */
 
 .skills-page {
-    width: calc(100% - 0px);
+    padding: 80px 75px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 70px 80px;
-    box-sizing: border-box;
 }
+
+
+/* HEADER */
 
 .skills-header {
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 }
 
 .skills-header h1 {
-    margin: 0;
+    font-size: 48px;
     color: #ffffff;
-    font-size: 52px;
-    font-weight: 700;
-    letter-spacing: 3px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
 }
 
 .skills-header .divider {
-    width: 145px;
+    width: 140px;
     height: 2px;
-    background: #e5b82e;
-    margin: 25px auto;
+    background: #e6b91e;
+    margin: 0 auto 22px;
 }
 
 .skills-header p {
-    margin: 0;
-    color: #9eafd0;
-    font-size: 17px;
+    color: #9fb0cc;
+    font-size: 18px;
 }
 
 
 /* CATEGORY */
 
 .skill-category {
-    margin: 55px 0 25px;
-    color: #e5b82e;
-    font-size: 27px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    color: #e6b91e;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 55px;
+    margin-bottom: 25px;
 }
 
 .skill-category i {
-    color: #2869ed;
-    margin-right: 12px;
+    margin-right: 10px;
+    color: #2f6df6;
 }
 
 
-/* GRID */
+/* SKILLS GRID */
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
+    gap: 24px;
 }
 
 
-/* CARD */
+/* SKILL CARD */
 
 .skill-card {
-    background: #111a2d;
-    border: 1px solid rgba(229, 184, 46, 0.35);
-    border-radius: 15px;
-    padding: 28px 30px;
-    min-height: 155px;
-    box-sizing: border-box;
+    background: #101526;
+    border: 1px solid #303b55;
+    border-radius: 16px;
+    padding: 28px;
+    min-height: 170px;
     transition: 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
-    border-color: #e5b82e;
+    border-color: #e6b91e;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
+
+
+/* ICON */
 
 .skill-card > i {
-    display: block;
-    color: #2869ed;
-    font-size: 30px;
-    margin-bottom: 16px;
+    font-size: 28px;
+    color: #2f6df6;
+    margin-bottom: 18px;
 }
+
+
+/* TITLE */
 
 .skill-card h3 {
-    margin: 0 0 10px;
     color: #ffffff;
     font-size: 21px;
+    margin-bottom: 10px;
 }
+
+
+/* DESCRIPTION */
 
 .skill-card p {
-    margin: 0;
-    color: #c3cddd;
+    color: #b8c3d6;
     font-size: 15px;
     line-height: 1.7;
+    margin: 0;
 }
 
 
-/* TOOLS */
+/* =========================================
+   TOOLS & TECHNOLOGIES
+========================================= */
 
 .skills-tools {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    margin-top: 10px;
 }
 
 .skills-tools span {
+    display: inline-block;
     padding: 10px 18px;
-    border: 1px solid rgba(229, 184, 46, 0.45);
+    background: #101526;
+    border: 1px solid #303b55;
     border-radius: 25px;
-    background: #111a2d;
-    color: #e5b82e;
-    font-size: 15px;
+    color: #dce4f2;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.skills-tools span:hover {
+    border-color: #e6b91e;
+    color: #e6b91e;
+    transform: translateY(-2px);
 }
 
 
-/* RESPONSIVE */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 900px) {
 
     .skills-page {
-        padding: 80px 35px;
+        padding: 60px 30px;
     }
 
     .skills-grid {
         grid-template-columns: 1fr;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .skills-page {
-        padding: 70px 20px;
     }
 
     .skills-header h1 {
@@ -1566,7 +1578,31 @@ z-index:-1;
     }
 
     .skill-category {
-        font-size: 23px;
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .skills-page {
+        padding: 45px 20px;
+    }
+
+    .skills-header h1 {
+        font-size: 34px;
+    }
+
+    .skills-header p {
+        font-size: 15px;
+    }
+
+    .skill-category {
+        font-size: 21px;
+    }
+
+    .skill-card {
+        padding: 22px;
     }
 
 }
